@@ -40,7 +40,7 @@ function newPost() {
 
     </div>`
     galleryItem.querySelector(".change-post").addEventListener("change",changeImage)
-    gallery.appendChild(galleryItem)
+    gallery.insertBefore(galleryItem,gallery.childNodes[0])
     setPostsNum()
 }
 
